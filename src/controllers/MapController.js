@@ -3,6 +3,12 @@ import Logger from "../util/logger.js";
 import Validator from "../util/validator.js";
 
 export default {
+  /**
+   * Get map details
+   * @param {*} req
+   * @param {*} res
+   * @returns
+   */
   list: (req, res) => {
     let validation = Validator.check([
       Validator.required(req.query, "spaceId"),
